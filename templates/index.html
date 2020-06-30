@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Oh hai!</h1>
+	<div>
+		<form action="{{ url_for('save') }}" method="POST">
+			<label for="paragraphs">How many paragraphs would you like?</label>
+			<input type="text" name="paragraphs" value="{{ cookie.get('paragraphs', '') }}" autofocus>
+			<input type="submit" value="Generate">
+		</form>
+		{% block ipsum %}
+		{% endblock %}
+	</div>
+{% endblock %}
