@@ -31,7 +31,7 @@ def text():
 
 @app.route('/save', methods=['POST'])
 def save():
-	flash("Here you go:")
+	flash("You are my favorite customer!")
 	response = make_response(redirect(url_for('text')))
 	data = get_cookie()
 	data.update(dict(request.form.items()))

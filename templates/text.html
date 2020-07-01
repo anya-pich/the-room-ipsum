@@ -3,4 +3,13 @@
 <form action="">
 	<textarea name="ipsum_text" cols="30" rows="10">{{ ipsum_text }}</textarea>
 </form>
+<button onclick="copy()">Copy to clipboard</button>
+<script>
+	function copy() {
+		const copyText = document.querySelector("textarea")
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); // for mobiles
+		document.execCommand("copy");
+	}
+</script>
 {% endblock %}
