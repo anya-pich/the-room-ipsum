@@ -26,13 +26,14 @@ header {
 }
 
 h1 {
-	font-family: Fredericka the Great, cursive;
+	font-family: Fredericka the Great, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: normal;
 	font-size: 5em;
+	text-shadow: 1px 1px 2px lightgray;
 }
 
 h2 {
-	font-family: Emilys Candy, cursive;
+	font-family: Emilys Candy, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 3.5em;
 	align-self: baseline;
 	margin-left: auto;
@@ -79,7 +80,7 @@ h2 {
 }
 
 .warning-text {
-	font: Pangolin;
+	font-family: Pangolin, Arial, Helvetica, sans-serif;
 	font-size: 2em;
 	line-height: 1em;
 	text-align: center;
@@ -110,7 +111,7 @@ h2 {
 }
 
 .textbox {
-	font-family: Pangolin, serif;
+	font-family: Pangolin, Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1.6em;
 	line-height: 1.8em;
