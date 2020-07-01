@@ -39,4 +39,5 @@ def save():
 	response.set_cookie('settings', json.dumps(dict(request.form.items())))
 	return response
 
-app.run(debug=True, port=8000, host='0.0.0.0')
+# app.run(debug=True, port=8000, host='0.0.0.0')
+app.run(threaded=True, port=5000)
