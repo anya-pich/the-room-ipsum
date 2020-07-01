@@ -11,12 +11,12 @@
 <body>
 	<div class="container">
 		<header>
-			<h1>The Room Ipsum </h1>
+			<h1><a href="{{ url_for('index') }}">The Room Ipsum</a></h1>
 			<h2> - oh hai Mark!</h2>
 		</header>
 		{% block content %}{% endblock %}
 		<footer>
-			<p class="helper-text"><a href="http://www.annapi.ch" target="_blank">Anna Pichugina</a> © {{ CURRENTYEAR }}</p>
+			<p class="helper-text"><a class="underline-link" href="http://www.annapi.ch" target="_blank">Anna Pichugina</a> © {{ CURRENTYEAR }}</p>
 		</footer>
 	</div>
 </body>

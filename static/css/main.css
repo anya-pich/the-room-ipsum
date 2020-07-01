@@ -90,6 +90,7 @@ h2 {
 .copy-button,
 .input-button {
 	border: 2px solid lightgray;
+	padding: 3px 6px;
 }
 
 .copy-button:hover,
@@ -123,13 +124,16 @@ footer {
 }
 
 a {
-	border-bottom: 2px solid lightgray;
 	text-decoration: none;
 	color: inherit;
 	font-size: inherit;
 }
 
-a:hover {
+.underline-link {
+	border-bottom: 2px solid lightgray;
+}
+
+.underline-link:hover {
 	border-bottom: 2px solid gray;
 }
 
