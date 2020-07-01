@@ -1,15 +1,20 @@
-{% extends "index.html" %}
-{% block ipsum %}
-<form action="">
-	<textarea name="ipsum_text" cols="30" rows="10">{{ ipsum_text }}</textarea>
-</form>
-<button onclick="copy()">Copy to clipboard</button>
+{% extends "index.html" %} {% block ipsum %}
+<div class="textbox-container">
+	<button class="copy-button" onclick="copy()">Copy to clipboard</button>
+  <textarea
+    class="textbox"
+    name="ipsum_text"
+    autofocus
+		onfocus="this.style.height=this.scrollHeight+3+'px';"
+		onchange="this.style.height=this.scrollHeight+3+'px';"
+  >{{ ipsum_text }}</textarea>
+</div>
 <script>
-	function copy() {
-		const copyText = document.querySelector("textarea")
-		copyText.select();
-		copyText.setSelectionRange(0, 99999); // for mobiles
-		document.execCommand("copy");
-	}
+  function copy() {
+    const copyText = document.querySelector("textarea");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // for mobiles
+    document.execCommand("copy");
+  }
 </script>
 {% endblock %}

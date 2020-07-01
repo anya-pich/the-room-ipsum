@@ -1,6 +1,6 @@
-import json
-
 from flask import Flask, request, render_template, redirect, url_for, make_response, flash
+from datetime import date
+import json
 
 from jumbler import make_paragraphs
 
@@ -16,7 +16,7 @@ def get_cookie():
 
 @app.route('/')
 def index():
-	return render_template('index.html', cookie=get_cookie())
+	return render_template('index.html', cookie=get_cookie(), CURRENTYEAR=date.today().year)
 
 @app.route('/text')
 def text():
@@ -26,7 +26,8 @@ def text():
 	return render_template(
 		'text.html',
 		cookie=get_cookie(),
-		ipsum_text=ipsum_text
+		ipsum_text=ipsum_text,
+		CURRENTYEAR=date.today().year
 	)
 
 @app.route('/save', methods=['POST'])

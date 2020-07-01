@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+	font-size: 10px;
+	color: #333333;
+}
+
+body {
+	background: #fafafa;
+}
+
+.container {
+	width: 95%;
+	max-width: 680px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+h1 {
+	font-family: Fredericka the Great, cursive;
+	font-weight: normal;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: Emilys Candy, cursive;
+	font-size: 3.5em;
+	align-self: baseline;
+	margin-left: auto;
+	color: lightgray;
+}
+
+/* Body */
+
+.input-container {
+	margin: 3em auto;
+}
+
+.input-field {
+	width: 3em;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid lightgray;
+}
+
+.input-field:focus {
+	border-bottom-color: gray;
+}
+
+.input-label {
+	margin: 1em;
+}
+
+.warning-container,
+.textbox {
+	width: 100%;
+	outline: none;
+	resize: none;
+	padding: 3em 2em 2em 2em;
+	border: none;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+	background: #fff;
+}
+
+.warning-container {
+	background-color: peachpuff;
+	background-color: seashell;
+	border: solid 2px lightsalmon;
+}
+
+.warning-text {
+	font: Pangolin;
+	font-size: 2em;
+	line-height: 1em;
+	text-align: center;
+	color: lightsalmon;
+	margin: 3em;
+}
+
+.copy-button,
+.input-button {
+	border: 2px solid lightgray;
+}
+
+.copy-button:hover,
+.input-button:hover {
+	border: 2px solid gray;
+}
+
+.textbox-container {
+	position: relative;
+}
+
+.copy-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0.5em;
+}
+
+.textbox {
+	font-family: Pangolin, serif;
+	font-weight: normal;
+	font-size: 1.6em;
+	line-height: 1.8em;
+}
+
+/* Footer */
+
+footer {
+	margin-top: auto;
+	align-self: center;
+}
+
+a {
+	border-bottom: 2px solid lightgray;
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+a:hover {
+	border-bottom: 2px solid gray;
+}
+
+/* Typography */
+
+.input-field,
+.input-label,
+.input-button,
+.copy-button,
+.helper-text {
+	font-family: Schoolbell, sans-serif;
+	font-size: 1.6em;
+}
+
+/* Media Queries */
+
+@media (max-width: 670px) {
+
+	h1 {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	h2 {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 10vw;
+	}
+
+	.textbox {
+		font-size: 1.4em;
+		line-height: 1.8em;
+		padding: 3em 1em 1em 1em;
+	}
+}

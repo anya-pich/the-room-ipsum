@@ -11,4 +11,4 @@ def make_paragraphs(num):
 				lines.append(line)
 			paragraph = " ".join(lines)
 			hot_mess.append(paragraph)
-		return "\n".join(hot_mess)
+		return "\n\n".join(hot_mess)
